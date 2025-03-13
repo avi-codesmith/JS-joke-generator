@@ -70,3 +70,41 @@ h3 {
     transform: translateX(10px);
   }
 }
+
+.loader {
+  height: 42px;
+  width: 42px;
+  background-color: transparent;
+  border: 3px solid #ddd;
+  border-radius: 50%;
+  border-top-color: royalblue;
+  animation: rotate 1s infinite;
+  margin: 0 auto;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: laugh 4s linear infinite;
+}
+
+@keyframes laugh {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(80deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
