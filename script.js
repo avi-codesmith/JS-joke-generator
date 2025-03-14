@@ -21,7 +21,8 @@ const getJoke = () => {
 
       if (item.joke === undefined) {
         loader.style.display = "none";
-        img.src = "warning.png";
+        // img.src = "warning.png";
+        img.style.display = "none";
         jokeH3.textContent = "⚠️ Can't generate joke pls try again";
         jokeH3.style.color = "orangered";
         jokeH3.classList.add("move");
@@ -31,7 +32,7 @@ const getJoke = () => {
         }, 200);
       } else {
         jokeH3.style.color = "#333";
-        img.src = "smile.png";
+        img.style.display = "block";
       }
       if (img.src.includes("smile.png")) {
         img.classList.add("rotate");
